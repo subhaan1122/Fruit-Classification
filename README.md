@@ -1,43 +1,46 @@
-This project uses machine learning to classify different types of fruits based on their physical characteristics such as mass, width, height, and color score. A Logistic Regression model is trained and evaluated to predict the fruit label, demonstrating a complete machine learning pipeline.
+🍎 Fruit Classification with Logistic Regression:
 
--> Features:
+This project uses Logistic Regression to classify fruits based on physical characteristics such as mass, width, height, and color score. It also includes complete model evaluation using accuracy, precision, recall, F1 score, confusion matrix, and classification report.
 
-1. Data Preprocessing:
-- Selects relevant features for classification.
-- Splits the data into training and testing sets for model evaluation.
-  
-2. Model Training:
-- Trains a Logistic Regression model for multiclass classification.
+📌 Overview:
 
-3. Model Evaluation:
-Provides detailed evaluation using:
-- Accuracy
-- F1-Score
-- Precision
-- Recall
-- Confusion Matrix
-- Classification Report
-  
-4. Modular Implementation:
-- Encapsulates functionality in reusable functions for better organization and extensibility.
+- Dataset: fruits.csv
+- Objective: Predict the fruit label based on physical measurements
+- Model: Logistic Regression (scikit-learn)
+- Evaluation Metrics: Accuracy, F1 Score, Precision, Recall, Confusion Matrix
 
--> Technologies Used:
+🧾 Features Used:
 
-- Python: Programming language.
-- Pandas: For data manipulation and analysis.
-- Scikit-learn: For model training, evaluation, and preprocessing.
+Feature :	Description
+mass: 	Mass of the fruit (grams)
+width: 	Width of the fruit (cm)
+height: 	Height of the fruit (cm)
+color_score: 	Color score of the fruit
 
--> How It Works:
+⚙️ How It Works:
 
-1. Data Loading:
-- Reads the fruit dataset from a CSV file.
-  
-2. Preprocessing:
-- Extracts relevant features (mass, width, height, color_score) and target labels (fruit_label).
-- Splits the data into training and testing sets.
-  
-3. Model Training:
-- Trains a Logistic Regression model to classify the fruits.
-- 
-Model Evaluation:
-- Evaluates the model on test data and reports metrics like accuracy, F1-score, precision, recall, and confusion matrix.
+- Load the dataset using pandas
+- Preprocess the data by selecting features and target
+- Split the data into training and testing sets
+- Train the Logistic Regression model with max_iter=10000 to ensure convergence
+- Evaluate the model using key classification metrics
+
+ 📈 Evaluation Metrics:
+ 
+The model is evaluated using:
+
+✅ Accuracy
+📊 F1 Score (weighted)
+🔁 Recall (weighted)
+🎯 Precision (weighted)
+📉 Confusion Matrix
+📝 Classification Report
+
+💡 Learnings:
+
+- Applied Logistic Regression for multi-class classification
+- Practiced data preprocessing and train-test splitting
+- Gained experience in using model evaluation metrics
+- Modularized code with reusable functions
+
+🌟 Show some ❤️ by starring this project!
